@@ -44,12 +44,14 @@
        constructor(public http: HttpClient) {
          console.log('Hello HttpServicesProvider Provider');
        }
-    5、在数据请求服务http-services文件中书写数据请求方法以及数据提交方法，详情可以到本项目中去查看
+    5、在数据请求服务http-services文件中书写数据请求方法以及数据提交方法，详情可以到本项目中去查看，页面地址：
+        https://github.com/shiyuyuanfang/ionic3-httpclient/blob/master/src/providers/http-services/http-services.ts
     6、在要使用数据请求的页面中引入该数据请求服务：
       import { HttpServicesProvider } from '../../providers/http-services/http-services'; // 引入自定义的 数据请求服务
-    7、声明该数据请求服务并调用（详情可以到该项目中去查看）：
+    7、声明该数据请求服务并调用：
         constructor(public navCtrl: NavController,public httpService: HttpServicesProvider) {
           this. videoRequstData();  //调用数据请求函数
           this. videoPostData();    //调用数据发送函数
         }
+     8、第7步中的详情可在本项目中查看，页面地址：
 ```
