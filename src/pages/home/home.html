@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-list>
+    <ion-item *ngFor="let item of list">
+      <div>{{ item.userId }} -- {{ item.id }}</div>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>
