@@ -13,7 +13,9 @@
     9、npm install 安装依赖项
     10、ionic serve 运行该项目
 
-注意：如果你的ionic环境都已经搭建完成，或者在你电脑上已经不止一次运行过ionic项目的情况下可以省略前六步直接执行7-10步查看项目（至于样式就靠你自己研究了）
+注意：
+     1、如果你的ionic环境都已经搭建完成，或者在你电脑上已经不止一次运行过ionic项目的情况下可以省略前六步直接执行7-10步查看项目（至于样式就靠你自己研究了）。
+     2、该项目用的数据请求地址为 http://jsonplaceholder.typicode.com/ 中的地址，若是本项目中的地址失效可自行在src/providers/http-services/http-services.ts文件中自行配置自己的域名，之后在执行数据请求的页面配置地址即可
 ```
 
 如何在ionic3项目中使用httpclient
@@ -42,7 +44,7 @@
        constructor(public http: HttpClient) {
          console.log('Hello HttpServicesProvider Provider');
        }
-    5、在数据请求服务http-services文件中书写数据请求方法以及数据提交方法，详情可以到该项目中去查看
+    5、在数据请求服务http-services文件中书写数据请求方法以及数据提交方法，详情可以到本项目中去查看
     6、在要使用数据请求的页面中引入该数据请求服务：
       import { HttpServicesProvider } from '../../providers/http-services/http-services'; // 引入自定义的 数据请求服务
     7、声明该数据请求服务并调用（详情可以到该项目中去查看）：
