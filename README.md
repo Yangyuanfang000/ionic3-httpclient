@@ -53,5 +53,6 @@
           this. videoRequstData();  //调用数据请求函数
           this. videoPostData();    //调用数据发送函数
         }
-     8、第7步中的详情可在本项目中查看，页面地址：
+    8、第7步中的详情可在本项目中查看，页面地址：
+       https://github.com/shiyuyuanfang/ionic3-httpclient/blob/master/src/pages/home/home.ts
 ```
